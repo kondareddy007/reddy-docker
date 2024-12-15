@@ -1,6 +1,8 @@
 FROM almalinux:8
 ARG username
-USER adduser $username
+RUN adduser 
+USER $username
+
 CMD [ "sleep", "100" ]
 
 
@@ -17,5 +19,5 @@ CMD [ "sleep", "100" ]
 # ARG instruction can be used before FROM instruction to provide values to FROM instruction.
 
 # ARG value deffnied before FROM will not be accessed after FROM
-#if you not pss the ARGUMENTS below error will come.
-#ERROR: failed to solve: the Dockerfile cannot be empty
+#if you not pass the ARGUMENTS at run time below error will come.
+#docker: Error response from daemon: unable to find user adduser : no matching entries in passwd file.
