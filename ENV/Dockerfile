@@ -7,3 +7,6 @@ CMD ["nginx","-g","daemon off"]
 
 
 #We can use ENV varaibe in docker container.
+#docker build -t env:v1 .
+#docker images
+#
