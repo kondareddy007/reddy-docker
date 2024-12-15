@@ -1,5 +1,6 @@
 FROM almalinux:8
 RUN yum install nginx -y 
 RUN rm -rf /usr/share/nginx/html/index.html
-ADD https://raw.githubusercontent.com/kondareddy007/reddy-docker/refs/heads/master/CMD/Dockerfile /usr/share/nginx/html/index.html
+COPY index.html /usr/share/nginx/html/
+ADD https://raw.githubusercontent.com/kondareddy007/siva-daws-76s-notes/refs/heads/master/finalsession.txt /tmp
 CMD ["nginx","-g","daemon off;"]
