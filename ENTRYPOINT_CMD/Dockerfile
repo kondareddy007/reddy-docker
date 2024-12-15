@@ -16,3 +16,8 @@ ENTRYPOINT [ "ping" ]
 
 # 1. You can use CMD instruction to supply default arguements to ENTRYPOINT
 # 2. user can always override CMD arguements from run time
+
+#docker build -t entrypoint.v1
+#docker run entrypoint:v1 
+#docker run entrypoint:v1 ping yahoo.com
+
