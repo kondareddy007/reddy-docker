@@ -1,4 +1,4 @@
-FROM amazonlinux:8
+FROM almalinux:8
 CMD [ "ping","google.com" ]
 
 
